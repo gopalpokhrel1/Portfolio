@@ -14,10 +14,14 @@ import Contact from "./components/Contact";
 
 function App() {
   const [loading, setLoading] = useState(true);
-  const handle_load = ()=>{
-    setLoading(false);
-  }
-  window.addEventListener("load", handle_load);
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 3000);
+    return () => {
+      clearTimeout(timer);
+    };
+  }, []);
   const router = createBrowserRouter([
     {
       path:"/",

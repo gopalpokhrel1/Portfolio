@@ -4,6 +4,7 @@ import "../App.css";
 import frontend from '/frontend.png'
 import backend from '/backend.png'
 import responsive from '/responsive.png'
+import Footer from './Footer'
 
 export default function Services() {
   return (
@@ -39,6 +40,8 @@ export default function Services() {
         </div>
 
       </div>
+
+      <Footer/>
     </>
   );
 }

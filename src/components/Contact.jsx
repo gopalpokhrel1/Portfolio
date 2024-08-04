@@ -2,6 +2,7 @@ import React from 'react'
 import Navbar from './Navbar'
 import ContactBox from './ContactBox'
 import Form from './Form'
+import Footer from '../components/Footer'
 
 export default function Contact() {
 
@@ -43,11 +44,11 @@ export default function Contact() {
           
           <div className='contact-grid'>
             {
-              contact_content.map((item)=>{
+              contact_content.map((item, index)=>{
               return(
                 <>
                 <div>
-                  <ContactBox heading={item.title} description={item.description}  logo={item.logo}/>
+                  <ContactBox key={index} heading={item.title} description={item.description}  logo={item.logo}/>
                 </div>
                 </>
               )
@@ -56,6 +57,8 @@ export default function Contact() {
           </div>
         <Form/>
     </div>
+
+    <Footer/>
     </>
   )
 }

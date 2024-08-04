@@ -3,6 +3,8 @@ import Navbar from "./Navbar";
 import user_image from "/user-img.png";
 import right_arrow from "/right.png";
 import "../App.css";
+import Skill from "./Skill";
+import Footer from "./Footer";
 
 export default function About() {
   return (
@@ -98,156 +100,12 @@ export default function About() {
                <p>Skills</p>
                <div className="skills-section-line"></div>
           </div>
-
-          <div className="skills-row">
-            <div className="skills-descriptions">
-              <div className="skills-title">
-                <h4>HTML</h4>
-                <h4>100%</h4>
-              </div>
-              <div className="skills-line">
-                <div className="html-line"></div>
-              </div>
-            </div>
-            <div className="skills-descriptions">
-              <div className="skills-title">
-                <h4>CSS</h4>
-                <h4>70%</h4>
-              </div>
-              <div className="skills-line">
-                <div className="css-line"></div>
-              </div>
-            </div>
-
-          </div>
-          <div className="skills-row">
-            <div className="skills-descriptions">
-              <div className="skills-title">
-                <h4>Tailwind</h4>
-                <h4>70%</h4>
-              </div>
-              <div className="skills-line">
-                <div className="tailwind-line"></div>
-              </div>
-            </div>
-            <div className="skills-descriptions">
-              <div className="skills-title">
-                <h4>Bootstrap</h4>
-                <h4>60%</h4>
-              </div>
-              <div className="skills-line">
-                <div className="bootstrap-line"></div>
-              </div>
-            </div>
-
-          </div>
-          <div className="skills-row">
-            <div className="skills-descriptions">
-              <div className="skills-title">
-                <h4>Javascript</h4>
-                <h4>60%</h4>
-              </div>
-              <div className="skills-line">
-                <div className="javascript-line"></div>
-              </div>
-            </div>
-            <div className="skills-descriptions">
-              <div className="skills-title">
-                <h4>Typescript</h4>
-                <h4>60%</h4>
-              </div>
-              <div className="skills-line">
-                <div className="typescript-line"></div>
-              </div>
-            </div>
-
-          </div>
-          <div className="skills-row">
-            <div className="skills-descriptions">
-              <div className="skills-title">
-                <h4>React</h4>
-                <h4>70%</h4>
-              </div>
-              <div className="skills-line">
-                <div className="react-line"></div>
-              </div>
-            </div>
-            <div className="skills-descriptions">
-              <div className="skills-title">
-                <h4>Next Js</h4>
-                <h4>50%</h4>
-              </div>
-              <div className="skills-line">
-                <div className="next-js-line"></div>
-              </div>
-            </div>
-
-          </div>
-          <div className="skills-row">
-            <div className="skills-descriptions">
-              <div className="skills-title">
-                <h4>Node Js</h4>
-                <h4>60%</h4>
-              </div>
-              <div className="skills-line">
-                <div className="node-line"></div>
-              </div>
-            </div>
-            <div className="skills-descriptions">
-              <div className="skills-title">
-                <h4>Express Js</h4>
-                <h4>60%</h4>
-              </div>
-              <div className="skills-line">
-                <div className="express-line"></div>
-              </div>
-            </div>
-
-          </div>
-          <div className="skills-row">
-            <div className="skills-descriptions">
-              <div className="skills-title">
-                <h4>Prisma</h4>
-                <h4>40%</h4>
-              </div>
-              <div className="skills-line">
-                <div className="prisma-line"></div>
-              </div>
-            </div>
-            <div className="skills-descriptions">
-              <div className="skills-title">
-                <h4>MongoDB</h4>
-                <h4>60%</h4>
-              </div>
-              <div className="skills-line">
-                <div className="mongo-line"></div>
-              </div>
-            </div>
-
-          </div>
-          <div className="skills-row">
-            <div className="skills-descriptions">
-              <div className="skills-title">
-                <h4>Github</h4>
-                <h4>60%</h4>
-              </div>
-              <div className="skills-line">
-                <div className="github-line"></div>
-              </div>
-            </div>
-            <div className="skills-descriptions">
-              <div className="skills-title">
-                <h4>Git</h4>
-                <h4>60%</h4>
-              </div>
-              <div className="skills-line">
-                <div className="git-line"></div>
-              </div>
-            </div>
-
-          </div>
         </div>
+        <Skill/>
+       
       </div>
+
+      <Footer/>
     </>
   );
 }

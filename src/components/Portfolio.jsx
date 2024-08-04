@@ -67,10 +67,10 @@ export default function Portfolio() {
         </div>
 
         <div className="portfolio-content">
-      {data.map((item)=>{
+      {data.map((item, index)=>{
         return(
          <div>
-           <Box {...item}/>
+           <Box {...item} key={index}/>
          </div>
         )
       })}
