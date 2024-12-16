@@ -104,8 +104,6 @@ export default function About() {
         <Skill/>
        
       </div>
-
-      <Footer/>
     </>
   );
 }
